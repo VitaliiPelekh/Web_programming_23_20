@@ -1,0 +1,55 @@
+#wrapper{
+    background-color: lightgray;
+}
+
+#styleSideBar {
+    width: 15%;
+    height: auto;
+    float: left;
+    padding: 20px 0 0 0 !important;
+}
+
+.styleMarginSideBar {
+    margin: 0 10% 0 10% !important;
+}
+
+.styleListSVG {
+    float: right;
+    margin-top: 2.45%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.styleLogo {
+    font-weight: bold;
+    font-size: 2em!important;
+}
+
+.styleLines {
+    color: black;
+    margin: 10% 0;
+}
+
+#styleNavBar{
+    padding: 25px;
+    background-color: white;
+}
+
+#styleSearchSVG{
+    float: left;
+}
+
+.styleNavBarSVG{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 30px;
+}
+
+.styleSearchForm{
+    border: none!important;
+    font-size: 1.5em;
+}
+
+#bellRotate{
+    transform: rotate(25deg);
+}
