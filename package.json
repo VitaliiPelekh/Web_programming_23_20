@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/V3n7ilator/Web_programming_23_20#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.0",
     "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
