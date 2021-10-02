@@ -1,5 +1,15 @@
 #wrapper{
-    background-color: lightgray;
+    display: flex;
+    width: 100%;
+    background-color: #e4ebf7;
+}
+
+#main{
+    display: block;
+    width: 100%;
+}
+#content{
+    padding: 40px;
 }
 
 #styleSideBar {
@@ -7,6 +17,7 @@
     height: auto;
     float: left;
     padding: 20px 0 0 0 !important;
+    background-color: #1b2133;
 }
 
 .styleMarginSideBar {
