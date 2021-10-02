@@ -1,0 +1,23 @@
+{
+  "name": "web_programming_23_20",
+  "version": "1.0.0",
+  "description": "Лабораторні роботи, ПМ_23_20",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V3n7ilator/Web_programming_23_20.git"
+  },
+  "author": "V3n7ilator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/V3n7ilator/Web_programming_23_20/issues"
+  },
+  "homepage": "https://github.com/V3n7ilator/Web_programming_23_20#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.5.4"
+  }
+}
