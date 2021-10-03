@@ -1,14 +1,15 @@
-#wrapper{
+#wrapper {
     display: flex;
     width: 100%;
     background-color: #e4ebf7;
 }
 
-#main{
+#main {
     display: block;
     width: 100%;
 }
-#content{
+
+#content {
     padding: 40px;
 }
 
@@ -24,16 +25,19 @@
     margin: 0 10% 0 10% !important;
 }
 
-.styleListSVG {
+.btnListSVG{
     float: right;
-    margin-top: 2.45%;
+}
+
+.styleListSVG {
     width: 2.5em;
     height: 2.5em;
+    color: white;
 }
 
 .styleLogo {
     font-weight: bold;
-    font-size: 2em!important;
+    font-size: 2em !important;
 }
 
 .styleLines {
@@ -41,26 +45,128 @@
     margin: 10% 0;
 }
 
-#styleNavBar{
+#styleNavBar {
     padding: 25px;
     background-color: white;
 }
 
-#styleSearchSVG{
+#styleSearchSVG {
     float: left;
 }
 
-.styleNavBarSVG{
-    width: 1.5em;
-    height: 1.5em;
+.btnNavBarSVG {
+    padding: 0;
+    color: gray;
     margin-right: 30px;
 }
 
-.styleSearchForm{
-    border: none!important;
+.styleNavBarSVG {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.styleSearchForm {
+    border: none !important;
     font-size: 1.5em;
 }
 
-#bellRotate{
+#bellRotate {
     transform: rotate(25deg);
+}
+
+#sectionBigGraph {
+    background-color: white;
+}
+
+.topOfGraphSection {
+    padding: 10px 25px;
+    background-color: white;
+}
+
+#stylePlusSVG {
+    transform: rotate(45deg);
+}
+
+.styleSVGPlusMinus {
+    width: 1.5em;
+    height: 1.5em;
+    color: gray;
+}
+
+.styleGroupOfPlusMinus {
+    float: right;
+}
+
+.styleTextTopOfSection {
+    font: 1.2em "Segoe UI", serif;
+    color: gray;
+}
+
+.styleLineOfSections {
+    margin: 10px 0;
+    height: 2px !important;
+    color: gray;
+}
+
+#GraphAndButtons {
+    padding: 15px 25px;
+}
+
+.styleBtnRadius {
+    /*border-radius: 25%;*/
+    padding: 5px 15px;
+}
+
+.styleMinusPlusSVG {
+    width: 30px;
+    height: 30px;
+}
+
+.btnMinusPlusSVG {
+    padding: 0;
+    color: gray;
+}
+
+.plusRotate {
+    transform: rotate(45deg);
+}
+
+#btnFloatRight {
+    float: right;
+}
+
+.styleBtnGroup {
+    margin-right: 30px;
+}
+
+#styleBtnRed{
+    background-color: #f45b63;
+    border-color: #f45b63;
+    color: white;
+}
+
+#styleBtnBlue{
+    background-color: #54a6de;
+    border-color: #54a6de;
+    color: white;
+}
+
+.btnStyleRadiusColor{
+    border: transparent 1px solid;
+    border-radius: 20px;
+}
+.btnStyleRadiusGray{
+    border: gray 1px solid;
+    border-radius: 20px;
+}
+.paddingBtnGroup{
+    padding: 7px 25px;
+}
+.styleGraph{
+    display: block;
+    width: 100%;
+    height: 700px;
+}
+#GraphBlock{
+    margin-top: 50px;
 }
