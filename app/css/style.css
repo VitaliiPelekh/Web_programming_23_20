@@ -23,6 +23,7 @@
 
 .styleMarginSideBar {
     margin: 0 10% 0 10% !important;
+    display: flex;
 }
 
 .btnListSVG{
@@ -38,11 +39,12 @@
 .styleLogo {
     font-weight: bold;
     font-size: 2em !important;
+    margin-right: 50px;
 }
 
 .styleLines {
     color: black;
-    margin: 10% 0;
+    margin: 8% 0;
 }
 
 #styleNavBar {
@@ -169,4 +171,17 @@
 }
 #GraphBlock{
     margin-top: 50px;
+}
+.profileBlock{
+    margin: 5% 10%;
+    display: flex;
+}
+#profileName{
+    margin-top: 13px;
+}
+.styleProfileImg{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-right: 30px;
 }
