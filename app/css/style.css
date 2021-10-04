@@ -22,7 +22,8 @@
 }
 
 .styleMarginSideBar {
-    margin: 0 10% 0 10% !important;
+    align-items: center;
+    justify-content: center;
     display: flex;
 }
 
