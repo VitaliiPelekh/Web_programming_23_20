@@ -12,52 +12,86 @@
 </head>
 <body>
 <div id="wrapper">
-    <div id="styleSideBar" class="flex-column flex-shrink-0 text-white">
+    <div id="sidebar" class="flex-column flex-shrink-0 text-white sidebar styleSideBar">
         <div class="styleMarginSideBar">
             <a href="/" class="align-items-center text-white text-decoration-none">
                 <span class="fs-4 styleLogo">BUVUD</span>
             </a>
             <button type="button" class="btn btnListSVG">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list styleListSVG" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list styleListSVG"
+                     viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                 </svg>
             </button>
         </div>
-        <hr class="styleLines">
+        <hr class="styleLines styleLine1">
         <div class="profileBlock">
-            <img src="/app/img/gordon.jpg" class="styleProfileImg" alt="">
+            <a target="_blank" href="https://gordon-shop.com"><img src="/app/img/gordon.jpg" class="styleProfileImg"
+                                                                   alt=""></a>
             <span id="profileName">Jeff<br>Bezos</span>
         </div>
-        <hr class="styleLines">
-
+        <ul class="sidebar-nav">
+            <li class="sidebar-item styleHRLi">
+                <a data-target="#ui" data-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+                    <span class="align-middle">Main</span>
+                </a>
+                <ul id="ui" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar" style="">
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Home</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Projects</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Messages</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Analytics</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Tasks</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Calendar</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Layots</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Accounts</a></li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a data-target="#forms" data-toggle="collapse" class="sidebar-link collapsed">
+                    <span class="align-middle">More</span>
+                </a>
+                <ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Payments</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Directory</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Library</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/">Help</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
     <div id="main">
         <nav id="styleNavBar" class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <button type="button" class="btn btnNavBarSVG">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="styleSearchSVG" class="bi bi-search styleNavBarSVG"
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="styleSearchSVG"
+                         class="bi bi-search styleNavBarSVG"
                          viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                     </svg>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <form class="d-flex">
-                        <input class="form-control styleSearchForm" type="search" placeholder="Search ..." aria-label="Search">
+                        <input class="form-control styleSearchForm" type="search" placeholder="Search ..."
+                               aria-label="Search">
                     </form>
                 </div>
                 <button type="button" class="btn btnNavBarSVG">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-gear styleNavBarSVG" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-gear styleNavBarSVG"
+                         viewBox="0 0 16 16">
                         <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                         <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
                     </svg>
                 </button>
                 <button type="button" class="btn btnNavBarSVG">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="bellRotate" class="bi bi-bell styleNavBarSVG" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="bellRotate"
+                         class="bi bi-bell styleNavBarSVG" viewBox="0 0 16 16">
                         <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
                     </svg>
                 </button>
                 <button type="button" class="btn btnNavBarSVG">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-lock styleNavBarSVG" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-lock styleNavBarSVG"
+                         viewBox="0 0 16 16">
                         <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
                     </svg>
                 </button>
@@ -71,69 +105,89 @@
                             <span class="styleTextTopOfSection">Project Activity</span>
                             <div class="styleGroupOfPlusMinus">
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
                                     </svg>
                                 </button>
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                 </button>
                             </div>
                         </div>
                         <!--<hr class="styleLineOfSections">-->
-                        <div id="GraphAndButtons" class="card-body">
-                            <div id="ButtonsBlock">
+                        <div class="card-body GraphAndButtons">
+                            <div class="ButtonsBlock">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle styleBtnGroup btnStyleRadiusGray paddingBtnGroup" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button type="button"
+                                            class="btn btn-outline-secondary dropdown-toggle styleBtnGroup btnStyleRadiusGray paddingBtnGroup"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
                                         Month
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Action</a></li>
                                         <li><a class="dropdown-item" href="#">Another action</a></li>
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="#">Separated link</a></li>
                                     </ul>
                                 </div>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle styleBtnGroup btnStyleRadiusGray paddingBtnGroup" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button type="button"
+                                            class="btn btn-outline-secondary dropdown-toggle styleBtnGroup btnStyleRadiusGray paddingBtnGroup"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
                                         Range
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Action</a></li>
                                         <li><a class="dropdown-item" href="#">Another action</a></li>
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="#">Separated link</a></li>
                                     </ul>
                                 </div>
                                 <div class="btn-group">
-                                    <button type="button" id="styleBtnBlue" class="btn btn-info dropdown-toggle styleBtnGroup btnStyleRadiusColor paddingBtnGroup" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button type="button" id="styleBtnBlue"
+                                            class="btn btn-info dropdown-toggle styleBtnGroup btnStyleRadiusColor paddingBtnGroup"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
                                         Last
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Action</a></li>
                                         <li><a class="dropdown-item" href="#">Another action</a></li>
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="#">Separated link</a></li>
                                     </ul>
                                 </div>
                                 <div class="btn-group">
-                                    <button type="button" id="styleBtnRed" class="btn btn-danger dropdown-toggle styleBtnGroup btnStyleRadiusColor paddingBtnGroup" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button type="button" id="styleBtnRed"
+                                            class="btn btn-danger dropdown-toggle styleBtnGroup btnStyleRadiusColor paddingBtnGroup"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
                                         Current
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Action</a></li>
                                         <li><a class="dropdown-item" href="#">Another action</a></li>
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="#">Separated link</a></li>
                                     </ul>
                                 </div>
-                                <button type="button" id="btnFloatRight" class="btn btn-outline-secondary btnStyleRadiusGray paddingBtnGroup">Today</button>
+                                <button type="button" id="btnFloatRight"
+                                        class="btn btn-outline-secondary btnStyleRadiusGray paddingBtnGroup">Today
+                                </button>
                             </div>
                             <div id="GraphBlock">
                                 <canvas id="myChart" class="chartjs-render-monitor styleGraph"></canvas>
@@ -149,18 +203,49 @@
                             <span class="styleTextTopOfSection">Involved Team</span>
                             <div class="styleGroupOfPlusMinus">
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
                                     </svg>
                                 </button>
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                 </button>
                             </div>
                         </div>
-                        <div class="card-body"></div>
+                        <div class="card-body GraphAndButtons littleProfilesBlock">
+                            <div class="styleProfiles styleProfile1">
+                                <a target="_blank" href="https://gordon-shop.com"><img src="/app/img/gordon.jpg"
+                                                                                       class="styleProfileImg"
+                                                                                       alt=""></a>
+                                <span class="profilesNames">Jeff Bezos</span>
+                                <span class="profilesJobs">Fame of memes</span>
+                            </div>
+                            <div class="styleProfiles styleProfile2">
+                                <a target="_blank" href="https://gordon-shop.com"><img src="/app/img/bogdanoff2.jpg"
+                                                                                       class="styleProfileImg"
+                                                                                       alt=""></a>
+                                <span class="profilesNames">Grichka Bogdanoff</span>
+                                <span class="profilesJobs">The fear of bullish cryptomarket</span>
+                            </div>
+                            <div class="styleProfiles styleProfile3">
+                                <a target="_blank" href="https://gordon-shop.com"><img src="/app/img/gordon.jpg"
+                                                                                       class="styleProfileImg"
+                                                                                       alt=""></a>
+                                <span class="profilesNames">Jeff Bezos</span>
+                                <span class="profilesJobs"></span>
+                            </div>
+                            <div class="styleProfiles styleProfile4">
+                                <a target="_blank" href="https://gordon-shop.com"><img src="/app/img/gordon.jpg"
+                                                                                       class="styleProfileImg"
+                                                                                       alt=""></a>
+                                <span class="profilesNames">Jeff Bezos</span>
+                                <span class="profilesJobs"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -169,18 +254,62 @@
                             <span class="styleTextTopOfSection">Mangers Activity</span>
                             <div class="styleGroupOfPlusMinus">
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
                                     </svg>
                                 </button>
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                 </button>
                             </div>
                         </div>
-                        <div class="card-body"></div>
+                        <div class="card-body GraphAndButtons">
+                            <div class="ButtonsBlockSecond">
+                                <div class="btn-group">
+                                    <button type="button"
+                                            class="btn btn-outline-secondary dropdown-toggle styleBtnGroup btnStyleRadiusGray paddingBtnGroup"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        February
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button"
+                                            class="btn btn-outline-secondary dropdown-toggle styleBtnGroup btnStyleRadiusGray paddingBtnGroup"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        Incoming Phone Calls
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <div class="styleBlockOfTxtTotal">
+                                    <span class="styleTotal">Total:&nbsp</span>
+                                    <span class="styleTotalNumber">23 574</span>
+                                </div>
+                            </div>
+                            <div id="LittleGraphBlock">
+                                <canvas id="myChart2" class="chartjs-render-monitor styleLittleGraph"></canvas>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,12 +320,14 @@
                             <span class="styleTextTopOfSection">Visits</span>
                             <div class="styleGroupOfPlusMinus">
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
                                     </svg>
                                 </button>
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                 </button>
@@ -211,12 +342,14 @@
                             <span class="styleTextTopOfSection">Messages</span>
                             <div class="styleGroupOfPlusMinus">
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
                                     </svg>
                                 </button>
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                 </button>
@@ -233,12 +366,14 @@
                             <span class="styleTextTopOfSection">Implementation</span>
                             <div class="styleGroupOfPlusMinus">
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
                                     </svg>
                                 </button>
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                 </button>
@@ -253,12 +388,14 @@
                             <span class="styleTextTopOfSection">Client Activity</span>
                             <div class="styleGroupOfPlusMinus">
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
                                     </svg>
                                 </button>
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                 </button>
@@ -275,12 +412,14 @@
                             <span class="styleTextTopOfSection">Mail</span>
                             <div class="styleGroupOfPlusMinus">
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-dash styleMinusPlusSVG" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"></path>
                                     </svg>
                                 </button>
                                 <button type="button" class="btn btnMinusPlusSVG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                         class="bi bi-plus styleMinusPlusSVG plusRotate" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                 </button>
@@ -293,7 +432,7 @@
         </div>
     </div>
 </div>
-
-<script src="app/js/script.js"></script>
+<script src="/app/js/script.js"></script>
+<script src="/node_modules/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

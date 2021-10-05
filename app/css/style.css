@@ -13,7 +13,7 @@
     padding: 40px;
 }
 
-#styleSideBar {
+.styleSideBar {
     width: 15%;
     height: auto;
     float: left;
@@ -27,13 +27,13 @@
     display: flex;
 }
 
-.btnListSVG{
+.btnListSVG {
     float: right;
 }
 
 .styleListSVG {
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.3em;
+    height: 2.3em;
     color: white;
 }
 
@@ -45,7 +45,15 @@
 
 .styleLines {
     color: black;
-    margin: 8% 0;
+}
+
+.styleLine1 {
+    margin: 9.5% 0;
+}
+
+.styleHRLi {
+    border-bottom: 1px solid #0c1224;
+    border-top: 1px solid #0c1224;
 }
 
 #styleNavBar {
@@ -111,12 +119,11 @@
     color: gray;
 }
 
-#GraphAndButtons {
-    padding: 15px 25px;
+.GraphAndButtons {
+    padding: 25px;
 }
 
 .styleBtnRadius {
-    /*border-radius: 25%;*/
     padding: 5px 15px;
 }
 
@@ -142,47 +149,145 @@
     margin-right: 30px;
 }
 
-#styleBtnRed{
+#styleBtnRed {
     background-color: #f45b63;
     border-color: #f45b63;
     color: white;
 }
 
-#styleBtnBlue{
+#styleBtnBlue {
     background-color: #54a6de;
     border-color: #54a6de;
     color: white;
 }
 
-.btnStyleRadiusColor{
+.btnStyleRadiusColor {
     border: transparent 1px solid;
     border-radius: 20px;
 }
-.btnStyleRadiusGray{
+
+.btnStyleRadiusGray {
     border: gray 1px solid;
     border-radius: 20px;
 }
-.paddingBtnGroup{
+
+.paddingBtnGroup {
     padding: 7px 25px;
 }
-.styleGraph{
+
+.styleGraph {
     display: block;
     width: 100%;
     height: 700px;
 }
-#GraphBlock{
+
+#GraphBlock {
     margin-top: 50px;
 }
-.profileBlock{
+
+.profileBlock {
     margin: 5% 10%;
+    align-items: flex-start;
+    justify-content: flex-start;
     display: flex;
 }
-#profileName{
-    margin-top: 13px;
+
+#profileName {
+    font-size: 20px;
+    margin-top: 2%;
+    color: #e4ebf7;
 }
-.styleProfileImg{
+
+.styleProfileImg {
     border-radius: 50%;
     width: 75px;
     height: 75px;
     margin-right: 30px;
+    float: left;
+}
+
+.sidebar-nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.sidebar-link, a.sidebar-link {
+    display: block;
+    padding: 1rem 1.625rem;
+    font-weight: 400;
+    transition: background .1s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    color: #515974;
+    background: #1b2133;
+    border-left: 3px solid transparent;
+}
+
+.sidebar [data-toggle=collapse]:after {
+    content: " ";
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    transition: all .2s ease-out;
+}
+.styleBlockOfTxtTotal{
+    font-size: large;
+    color: gray;
+    float: right;
+    position: relative;
+    padding-top: 0.8%;
+}
+.styleTotalNumber{
+    color: #f45b63;
+}
+
+.ButtonsBlockSecond{
+    display: block;
+}
+
+.styleLittleGraph {
+    display: block;
+    width: 100%;
+    height: 430px;
+}
+.row{
+    margin-bottom: 2%;
+}
+.card{
+    border-bottom-color: #dbe2ed;
+    border-bottom-width: 3px;
+    border-radius: .5rem;
+}
+.card-header{
+    border-radius: .5rem .5rem 0 0!important;
+}
+.profilesNames {
+    font-size: 1.5em;
+    color: #515974;
+}
+.profilesJobs {
+    font-size: 1.2em;
+    color: #a5a6bb;
+    display: block;
+}
+.littleProfilesBlock{
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.styleProfiles{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.styleProfile4{
+    margin-bottom: 0;
 }
