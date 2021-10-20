@@ -330,6 +330,10 @@
     float: left;
 }
 
+.styleProfile1 {
+    margin-top: 10px;
+}
+
 .styleProfile4 {
     margin-bottom: 0;
 }
@@ -349,4 +353,28 @@
     margin-right: .75rem;
     color: rgba(233,236,239,.5);
     margin-bottom: .3rem;
+}
+
+.btnStyleRadiusGreen{
+    background-color: #57c059;
+    border: #57c059 solid 1px;
+    border-radius: 20px;
+    color: white;
+}
+
+.btnBottomBlock{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.styleThreeCirclesGraphs{
+    height: 350px;
+    width: 100%;
+}
+
+.styleMessagesBlock{
+    width: 100%;
+    height: 391px;
 }
