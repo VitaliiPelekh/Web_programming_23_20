@@ -10,7 +10,7 @@
 }
 
 #content {
-    padding: 40px;
+    padding: 40px 40px 0 40px;
 }
 
 .styleSideBar {
@@ -446,7 +446,7 @@
     align-items: center;
 }
 
-.stylePosJustify{
+.stylePosJustify {
     justify-content: center;
 }
 
@@ -472,29 +472,213 @@
     height: 65px;
     float: left;
 }
-.stylePaddingBottom{
-    padding-bottom: 0.66rem!important;
+
+.stylePaddingBottom {
+    padding-bottom: 0.66rem !important;
 }
-.styleCounts{
+
+.styleCounts {
     color: #515974;
     font-size: large;
 }
-.styleNameBold{
+
+.styleNameBold {
     font-size: large;
     font-weight: 750;
     color: #515974;
 }
 
-.styleSizingList211{
+.styleSizingList211 {
     width: 44%;
 }
 
-.styleSizingList22{
+.styleSizingList22 {
     width: 8%;
 }
-.styleSizingList23{
+
+.styleSizingList23 {
     width: 8%;
 }
-.styleSizingList24{
+
+.styleSizingList24 {
     width: 6%;
+}
+
+.styleWrapperMail {
+    background-color: #e4ebf7;
+    display: flex;
+}
+
+.styleMailHeaderBlue {
+    background-color: #54a6de;
+    display: flex;
+    align-items: center;
+}
+
+.styleMailHeaderGreen {
+    background-color: #57c059;
+    display: flex;
+    align-items: center;
+    padding: 1.15rem 2rem !important;
+}
+
+.styleProfileImgMail {
+    width: 50px;
+    height: 50px;
+}
+
+.styleMailName {
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    font-family: system-ui;
+}
+
+.styleMailAddress {
+    color: white;
+    font-family: system-ui;
+}
+
+.styleSpacingMail {
+    letter-spacing: 1px;
+}
+
+.styleTxtInbox {
+    color: white;
+    font-family: system-ui;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.styleMailSearch {
+    float: right;
+}
+
+.styleSearchFormMail {
+    border: 1px solid #86d08a;
+    font-size: 1.7em;
+    background-color: #86d08a;
+    border-radius: 0 20px 20px 0;
+    color: black;
+    width: 250px;
+}
+
+.styleBtnSearchMail {
+    color: white !important;
+    border: 1px solid #86d08a;
+    background-color: #86d08a;
+    border-radius: 20px 0 0 20px;
+}
+
+#styleChangeTxt::placeholder {
+    color: #fff;
+}
+
+.styleBlockMailBtnNew {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.styleBtnMailRed {
+    padding: 0.5rem 9rem;
+    color: #fff;
+    background-color: #f45b63;
+    border-color: #f45b63;
+    font-weight: 300;
+    font-size: large;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.styleNavToolMailBtns {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-color: #e1e7f0;
+    font-weight: 400;
+    font-size: medium;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.styleMailToolsBlock {
+    display: flex;
+    align-content: center;
+    background-color: white;
+    padding: 1rem 2rem 1.1rem 2rem;
+    color: #515974;
+}
+
+.styleLeftThreeBtns {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.styleRightThreeBtns {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.styleMailPagesTxt {
+    font-size: medium;
+}
+
+.styleNavToolMailBtnsLR {
+    padding: 0.8rem;
+    background-color: #fff;
+    border-color: #e1e7f0;
+    font-weight: 400;
+    font-size: medium;
+    border-radius: 50%;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.styleVerticalLineMail {
+    margin-right: 2px;
+}
+
+.styleMailLinesBlock {
+    background-color: white;
+    margin-bottom: 2px;
+}
+
+.styleMailActiveLine {
+    display: flex;
+    background-color: #e1e7f0;
+}
+.styleMailLinesBlockFooter{
+    background-color: white;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.styleMailActiveLineRedMark {
+    width: 5px;
+    background-color: #f45b63;
+}
+
+.styleMsgMail {
+    background-color: #f45b63;
+    border-radius: 50%;
+    padding: 0.3rem 0.7rem;
+    color: #fff;
+    font-size: small;
+    float: right;
+    margin-right: 30px;
+}
+
+.styleMailHeadLinesBlockFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem 2rem;
 }
