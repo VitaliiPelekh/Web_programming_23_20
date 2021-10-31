@@ -294,7 +294,7 @@
     border-radius: .5rem .5rem 0 0 !important;
     padding: 0.7rem 1rem 0.3rem 2rem;
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
 .profilesNames {
@@ -351,30 +351,150 @@
 
 .sidebar-link i, .sidebar-link svg, a.sidebar-link i, a.sidebar-link svg {
     margin-right: .75rem;
-    color: rgba(233,236,239,.5);
+    color: rgba(233, 236, 239, .5);
     margin-bottom: .3rem;
 }
 
-.btnStyleRadiusGreen{
+.btnStyleRadiusGreen {
     background-color: #57c059;
     border: #57c059 solid 1px;
     border-radius: 20px;
     color: white;
 }
 
-.btnBottomBlock{
+.btnBottomBlock {
     display: block;
     width: 100%;
     text-align: center;
     margin-top: 28px;
 }
 
-.styleThreeCirclesGraphs{
+.styleThreeCirclesGraphs {
     height: 350px;
     width: 100%;
 }
 
-.styleMessagesBlock{
+.styleMessagesBlock {
     width: 100%;
     height: 391px;
+}
+
+.styleMsg {
+    background-color: #f45b63;
+    border-radius: 50%;
+    padding: 0.4rem 0.6rem;
+    margin-left: 20%;
+    color: #e4ebf7;
+}
+
+.styleListColor {
+    color: #a5a6bb;
+    font-size: medium;
+}
+
+.styleDateBold {
+    font-weight: 700;
+    color: #515974;
+    font-size: medium;
+}
+
+.styleDateSmall {
+    color: #a5a6bb;
+    font-size: small;
+}
+
+.styleBtnPriceGreen {
+    color: #fff;
+    background-color: #57c059;
+    border-color: #57c059;
+    font-weight: 700;
+    font-size: medium;
+    border-radius: 20px;
+}
+
+.styleBtnPriceRed {
+    color: #fff;
+    background-color: #f45b63;
+    border-color: #f45b63;
+    font-weight: 700;
+    font-size: medium;
+    border-radius: 20px;
+}
+
+.styleSizingList11 {
+    width: 7%;
+}
+
+.styleSizingList111 {
+    width: 0;
+}
+
+.styleSizingList12 {
+    width: 25%;
+}
+
+.styleSizingList122 {
+    width: 15%;
+}
+
+.styleSizingList13 {
+    width: 5%;
+}
+
+.stylePosCenter {
+    display: flex;
+    align-items: center;
+}
+
+.stylePosJustify{
+    justify-content: center;
+}
+
+.stylePosCenter2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.styleSizingList21 {
+    width: 45%;
+}
+
+.styleAmeroSheqel {
+    color: #51b748;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.styleProfileImgPrices {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    float: left;
+}
+.stylePaddingBottom{
+    padding-bottom: 0.66rem!important;
+}
+.styleCounts{
+    color: #515974;
+    font-size: large;
+}
+.styleNameBold{
+    font-size: large;
+    font-weight: 750;
+    color: #515974;
+}
+
+.styleSizingList211{
+    width: 44%;
+}
+
+.styleSizingList22{
+    width: 8%;
+}
+.styleSizingList23{
+    width: 8%;
+}
+.styleSizingList24{
+    width: 6%;
 }
