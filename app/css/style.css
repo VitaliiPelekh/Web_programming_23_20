@@ -654,7 +654,8 @@
     display: flex;
     background-color: #e1e7f0;
 }
-.styleMailLinesBlockFooter{
+
+.styleMailLinesBlockFooter {
     background-color: white;
     border-bottom-left-radius: 0.5rem;
 }
@@ -692,35 +693,36 @@
     border-bottom-right-radius: 0.5rem;
 }
 
-.styleListSubsLine{
+.styleListSubsLine {
     display: flex;
     align-items: center;
     justify-content: start;
     width: 0;
 }
-.stylePaddingSubsLines1{
+
+.stylePaddingSubsLines1 {
     padding: 0 2rem;
     height: 49px;
     width: 10%;
 }
 
-.stylePaddingSubsLines2{
+.stylePaddingSubsLines2 {
     padding: 0.6rem 2rem;
     height: 45px;
     width: 10%;
 }
 
-.styleActiveSub{
+.styleActiveSub {
     background-color: #e1e7f0;
 }
 
-.styleFirstInMsgBlock{
+.styleFirstInMsgBlock {
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.styleLastInMsgBlock{
+.styleLastInMsgBlock {
     width: 100%;
     display: flex;
     align-items: start;
@@ -733,7 +735,7 @@
     margin-right: 15px;
 }
 
-.styleFirstMsg{
+.styleFirstMsg {
     background-color: #57c059;
     padding: 5px 25px;
     color: white;
@@ -761,12 +763,12 @@
     margin-top: 35px;
 }
 
-.styleFooterTxtInMsgBlock{
+.styleFooterTxtInMsgBlock {
     color: #a5a6bb;
     font-size: medium;
 }
 
-.styleLastMsg{
+.styleLastMsg {
     background-color: #e1e7f0;
     padding: 5px 25px;
     color: #515974;
