@@ -183,10 +183,6 @@
     height: 700px;
 }
 
-#GraphBlock {
-    margin-top: 50px;
-}
-
 .profileBlock {
     margin: 5% 10% 10% 10%;
     align-items: flex-start;
@@ -372,6 +368,7 @@
 .styleThreeCirclesGraphs {
     height: 313px;
     width: 100%;
+    display: flex;
 }
 
 .styleMessagesBlock {

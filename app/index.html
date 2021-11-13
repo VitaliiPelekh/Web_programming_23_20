@@ -281,8 +281,8 @@
                                         class="btn btn-outline-secondary btnStyleRadiusGray paddingBtnGroup">Today
                                 </button>
                             </div>
-                            <div id="GraphBlock">
-                                <canvas id="myChart" class="chartjs-render-monitor styleGraph"></canvas>
+                            <div class="styleGraph">
+                                <canvas id="myAreaChart" class="chartjs-render-monitor"></canvas>
                             </div>
                         </div>
                     </div>
@@ -401,8 +401,8 @@
                                     <span class="styleTotalNumber">23 574</span>
                                 </div>
                             </div>
-                            <div id="LittleGraphBlock">
-                                <canvas id="myChart2" class="chartjs-render-monitor styleLittleGraph"></canvas>
+                            <div id="LittleGraphBlock" class="styleLittleGraph">
+                                <canvas id="myBarChart" class="chartjs-render-monitor" style="width: 400px; height: 170px"></canvas>
                             </div>
                         </div>
                     </div>
@@ -467,7 +467,17 @@
                                     <span class="styleTotalNumber">31%</span>
                                 </div>
                             </div>
-                            <div class="styleThreeCirclesGraphs"></div>
+                            <div class="styleThreeCirclesGraphs pt-4">
+                                <div class="chart-container" style="position: relative; height:275px; width:275px">
+                                    <canvas id="myPieChart1" width="300" height="300"></canvas>
+                                </div>
+                                <div class="chart-container me-3 ms-3" style="position: relative; height:275px; width:275px">
+                                    <canvas id="myPieChart2" width="300" height="300"></canvas>
+                                </div>
+                                <div class="chart-container" style="position: relative; height:275px; width:275px">
+                                    <canvas id="myPieChart3" width="300" height="300"></canvas>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -932,8 +942,9 @@
         </div>
     </div>
 </div>
-<script src="/app/js/script.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/app.js"></script>
+<script src="/node_modules/chart.js/dist/chart.min.js"></script>
+<script src="/app/js/script.js"></script>
 </body>
 </html>
