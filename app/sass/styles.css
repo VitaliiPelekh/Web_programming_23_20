@@ -1,0 +1,793 @@
+a.sidebar-link, .sidebar-link {
+  display: block;
+  padding: 1rem 1.625rem;
+  font-weight: 400;
+  transition: background 0.1s ease-in-out;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  color: #515974;
+  background: #1b2133;
+  border-left: 3px solid transparent;
+}
+
+a.sidebar-link svg, a.sidebar-link i, .sidebar-link svg, .sidebar-link i {
+  margin-right: 0.75rem;
+  color: rgba(233, 236, 239, 0.5);
+  margin-bottom: 0.3rem;
+}
+
+#wrapper {
+  display: flex;
+  width: 100%;
+  background-color: #e4ebf7;
+}
+
+#main {
+  display: block;
+  width: 100%;
+}
+
+#content {
+  padding: 40px 40px 0 40px;
+}
+
+.styleSideBar {
+  width: 15%;
+  height: auto;
+  float: left;
+  padding: 20px 0 0 0 !important;
+  background-color: #1b2133;
+}
+
+.styleMarginSideBar {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.btnListSVG {
+  float: right;
+}
+
+.styleListSVG {
+  width: 2.3em;
+  height: 2.3em;
+  color: white;
+}
+
+.styleLogo {
+  font-weight: bold;
+  font-size: 2em !important;
+  margin-right: 50px;
+}
+
+.styleLines {
+  color: black;
+}
+
+.styleLine1 {
+  margin: 9.5% 0;
+}
+
+.styleHRLi {
+  border-bottom: 1px solid #0c1224;
+  border-top: 1px solid #0c1224;
+}
+
+#styleNavBar {
+  padding: 25px;
+  background-color: white;
+}
+
+#styleSearchSVG {
+  float: left;
+}
+
+.btnNavBarSVG {
+  padding: 0;
+  color: gray;
+  margin-right: 30px;
+}
+
+.styleNavBarSVG {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.styleSearchForm {
+  border: none !important;
+  font-size: 1.5em;
+}
+
+#bellRotate {
+  transform: rotate(25deg);
+}
+
+#sectionBigGraph {
+  background-color: white;
+}
+
+.topOfGraphSection {
+  padding: 10px 25px;
+  background-color: white;
+}
+
+#stylePlusSVG {
+  transform: rotate(45deg);
+}
+
+.styleSVGPlusMinus {
+  width: 1.5em;
+  height: 1.5em;
+  color: gray;
+}
+
+.styleGroupOfPlusMinus {
+  float: right;
+}
+
+.styleTextTopOfSection {
+  font: 1.5em Segoe UI, serif;
+  color: gray;
+  font-weight: 650;
+}
+
+.styleLineOfSections {
+  margin: 10px 0;
+  height: 2px !important;
+  color: gray;
+}
+
+.GraphAndButtons {
+  padding: 25px;
+}
+
+.styleBtnRadius {
+  padding: 5px 15px;
+}
+
+.styleMinusPlusSVG {
+  width: 30px;
+  height: 30px;
+}
+
+.btnMinusPlusSVG {
+  padding: 0;
+  color: gray;
+}
+
+.plusRotate {
+  transform: rotate(45deg);
+}
+
+#btnFloatRight {
+  float: right;
+}
+
+.styleBtnGroup {
+  margin-right: 30px;
+}
+
+#styleBtnRed {
+  background-color: #f45b63;
+  border-color: #f45b63;
+  color: white;
+}
+
+#styleBtnBlue {
+  background-color: #54a6de;
+  border-color: #54a6de;
+  color: white;
+}
+
+.btnStyleRadiusColor {
+  border: transparent 1px solid;
+  border-radius: 20px;
+}
+
+.btnStyleRadiusGray {
+  border: gray 1px solid;
+  border-radius: 20px;
+}
+
+.paddingBtnGroup {
+  padding: 7px 25px;
+  font-size: larger;
+}
+
+.styleGraph {
+  display: block;
+  width: 100%;
+}
+
+.styleFooterGraphBlocks {
+  color: #515974;
+}
+
+.styleFooterGraphTxtDay {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.styleFooterGraphTxtDate {
+  font-size: large;
+}
+
+.footerGraphBlockTxt1 {
+  border-right: #e1e7f0 3px solid;
+  border-left: #e1e7f0 3px solid;
+}
+
+.profileBlock {
+  margin: 5% 10% 10%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+}
+
+#profileName {
+  font-size: 20px;
+  margin-top: 2%;
+  color: #e4ebf7;
+}
+
+.styleProfileImgLogo {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin-right: 30px;
+  margin-top: -5px;
+  float: left;
+}
+
+.sidebar-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-grow: 1;
+}
+
+.sidebar [data-toggle=collapse] {
+  position: relative;
+}
+.sidebar [data-toggle=collapse]:after {
+  content: " ";
+  border: solid;
+  border-width: 0 0.075rem 0.075rem 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1.55rem;
+  right: 1.5rem;
+  transition: all 0.2s ease-out;
+}
+.sidebar [data-toggle=collapse]:not(.collapsed):after {
+  transform: rotate(-135deg);
+  top: 1.65rem;
+}
+.sidebar [aria-expanded=true]:after {
+  transform: rotate(-135deg);
+  top: 1.65rem;
+}
+
+.styleBlockOfTxtTotal {
+  font-size: large;
+  color: gray;
+  float: right;
+  position: relative;
+  padding-top: 0.8%;
+  font-weight: 650;
+}
+
+.styleTotalNumber {
+  color: #f45b63;
+}
+
+.ButtonsBlockSecond {
+  display: block;
+}
+
+.styleLittleGraph {
+  display: block;
+  width: 100%;
+  height: 430px;
+}
+
+.row {
+  margin-bottom: 2%;
+}
+
+.card {
+  border-bottom-color: #e1e7f0;
+  border-bottom-width: 3px;
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  border-radius: 0.5rem 0.5rem 0 0 !important;
+  padding: 0.7rem 1rem 0.3rem 2rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.profilesNames {
+  font-size: 1.5em;
+  color: #515974;
+  font-weight: 700;
+}
+
+.profilesJobs {
+  font-size: 1.2em;
+  color: #a5a6bb;
+  display: block;
+}
+
+.littleProfilesBlock {
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.styleProfiles {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.styleProfileImg {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin-right: 30px;
+  margin-top: -7px;
+  float: left;
+}
+
+.styleProfile1 {
+  margin-top: 10px;
+}
+
+.styleProfile4 {
+  margin-bottom: 0;
+}
+
+.sidebar-dropdown .sidebar-link::before {
+  content: "";
+}
+.sidebar-dropdown .sidebar-link {
+  padding: 0.625rem 1.5rem 0.625rem 1.55rem;
+  font-weight: 500;
+  font-size: 120%;
+  color: #e4ebf7;
+}
+
+.btnStyleRadiusGreen {
+  background-color: #57c059;
+  border: #57c059 solid 1px;
+  border-radius: 20px;
+  color: white;
+}
+
+.btnBottomBlock {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 28px;
+}
+
+.styleThreeCirclesGraphs {
+  height: 313px;
+  width: 100%;
+  display: flex;
+}
+
+.styleMessagesBlock {
+  width: 100%;
+}
+
+.styleMsg {
+  background-color: #f45b63;
+  border-radius: 50%;
+  padding: 0.4rem 0.6rem;
+  margin-left: 20%;
+  color: #e4ebf7;
+}
+
+.styleListColor {
+  color: #a5a6bb;
+  font-size: medium;
+}
+
+.styleDateBold {
+  font-weight: 700;
+  color: #515974;
+  font-size: medium;
+}
+
+.styleDateSmall {
+  color: #a5a6bb;
+  font-size: small;
+}
+
+.styleBtnPriceGreen {
+  color: white;
+  background-color: #57c059;
+  border-color: #57c059;
+  font-weight: 700;
+  font-size: medium;
+  border-radius: 20px;
+}
+
+.styleBtnPriceRed {
+  color: white;
+  background-color: #f45b63;
+  border-color: #f45b63;
+  font-weight: 700;
+  font-size: medium;
+  border-radius: 20px;
+}
+
+.styleSizingList11 {
+  width: 7%;
+}
+
+.styleSizingList111 {
+  width: 0;
+}
+
+.styleSizingList12 {
+  width: 25%;
+}
+
+.styleSizingList122 {
+  width: 15%;
+}
+
+.styleSizingList13 {
+  width: 5%;
+}
+
+.stylePosCenter {
+  display: flex;
+  align-items: center;
+}
+
+.stylePosJustify {
+  justify-content: center;
+}
+
+.stylePosCenter2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styleSizingList21 {
+  width: 45%;
+}
+
+.styleAmeroSheqel {
+  color: #51b748;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.styleProfileImgPrices {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  float: left;
+}
+
+.stylePaddingBottom {
+  padding-bottom: 0.66rem !important;
+}
+
+.styleCounts {
+  color: #515974;
+  font-size: large;
+}
+
+.styleNameBold {
+  font-size: large;
+  font-weight: 750;
+  color: #515974;
+}
+
+.styleSizingList211 {
+  width: 44%;
+}
+
+.styleSizingList22 {
+  width: 8%;
+}
+
+.styleSizingList23 {
+  width: 8%;
+}
+
+.styleSizingList24 {
+  width: 6%;
+}
+
+.styleWrapperMail {
+  background-color: #e4ebf7;
+  display: flex;
+}
+
+.styleMailHeaderBlue {
+  background-color: #54a6de;
+  display: flex;
+  align-items: center;
+}
+
+.styleMailHeaderGreen {
+  background-color: #57c059;
+  display: flex;
+  align-items: center;
+  padding: 1.15rem 2rem !important;
+}
+
+.styleProfileImgMail {
+  width: 50px;
+  height: 50px;
+}
+
+.styleMailName {
+  color: white;
+  font-weight: 600;
+  font-size: large;
+  font-family: system-ui;
+}
+
+.styleMailAddress {
+  color: white;
+  font-family: system-ui;
+}
+
+.styleSpacingMail {
+  letter-spacing: 1px;
+}
+
+.styleTxtInbox {
+  color: white;
+  font-family: system-ui;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.styleMailSearch {
+  float: right;
+}
+
+.styleSearchFormMail {
+  border: 1px solid #86d08a;
+  font-size: 1.7em;
+  background-color: #86d08a;
+  border-radius: 0 20px 20px 0;
+  color: black;
+  width: 250px;
+}
+
+.styleBtnSearchMail {
+  color: white !important;
+  border: 1px solid #86d08a;
+  background-color: #86d08a;
+  border-radius: 20px 0 0 20px;
+}
+
+#styleChangeTxt::placeholder {
+  color: white;
+}
+
+.styleBlockMailBtnNew {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.styleBtnMailRed {
+  padding: 0.5rem 9rem;
+  color: white;
+  background-color: #f45b63;
+  border-color: #f45b63;
+  font-weight: 300;
+  font-size: large;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.styleNavToolMailBtns {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-color: #e1e7f0;
+  font-weight: 400;
+  font-size: medium;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.styleMailToolsBlock {
+  display: flex;
+  align-content: center;
+  background-color: white;
+  padding: 1rem 2rem 1.1rem 2rem;
+  color: #515974;
+}
+
+.styleLeftThreeBtns {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.styleRightThreeBtns {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.styleMailPagesTxt {
+  font-size: medium;
+}
+
+.styleNavToolMailBtnsLR {
+  padding: 0.8rem;
+  background-color: white;
+  border-color: #e1e7f0;
+  font-weight: 400;
+  font-size: medium;
+  border-radius: 50%;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.styleVerticalLineMail {
+  margin-right: 2px;
+}
+
+.styleMailLinesBlock {
+  background-color: white;
+  margin-bottom: 2px;
+}
+
+.styleMailActiveLine {
+  display: flex;
+  background-color: #e1e7f0;
+}
+
+.styleMailLinesBlockFooter {
+  background-color: white;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.styleMailActiveLineRedMark {
+  width: 5px;
+  background-color: #f45b63;
+}
+
+.styleMsgMail {
+  background-color: #f45b63;
+  border-radius: 50%;
+  padding: 0.3rem 0.7rem;
+  color: white;
+  font-size: small;
+  float: right;
+  margin-right: 30px;
+}
+
+.styleMailHeadLinesBlockFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem 2rem;
+}
+
+.styleMailSubsBlock {
+  background-color: white;
+  padding: 0 2rem 1.5rem 2rem;
+  color: #515974;
+  margin-top: 2px;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.styleListSubsLine {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 0;
+}
+
+.stylePaddingSubsLines1 {
+  padding: 0 2rem;
+  height: 49px;
+  width: 10%;
+}
+
+.stylePaddingSubsLines2 {
+  padding: 0.6rem 2rem;
+  height: 45px;
+  width: 10%;
+}
+
+.styleActiveSub {
+  background-color: #e1e7f0;
+}
+
+.styleFirstInMsgBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.styleLastInMsgBlock {
+  width: 100%;
+  display: flex;
+  align-items: start;
+}
+
+.styleMsgProfileImg {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin-right: 15px;
+}
+
+.styleFirstMsg {
+  background-color: #57c059;
+  padding: 5px 25px;
+  color: white;
+  border: 1px solid #57c059;
+  border-radius: 5px;
+  font-size: large;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #57c059;
+  border-bottom: 6px solid transparent;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 6px solid #e1e7f0;
+  border-bottom: 6px solid transparent;
+  margin-top: 35px;
+}
+
+.styleFooterTxtInMsgBlock {
+  color: #a5a6bb;
+  font-size: medium;
+}
+
+.styleLastMsg {
+  background-color: #e1e7f0;
+  padding: 5px 25px;
+  color: #515974;
+  border: 1px solid #e1e7f0;
+  border-radius: 5px;
+  font-size: large;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

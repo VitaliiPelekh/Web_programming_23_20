@@ -144,35 +144,54 @@ const area = document.getElementById('myAreaChart');
 const myArea = new Chart(area, {
     type: 'line',
     data: {
-        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+        labels: ['', '', '', '', '', '', '', ''],
         datasets: [{
-            data: [725, 650, 700, 775, 885, 700, 675],
-            backgroundColor: [
-                'rgba(84, 166, 222)',
-                'rgba(84, 166, 222)',
-                'rgba(84, 166, 222)',
-                'rgba(84, 166, 222)',
-                'rgba(244, 91, 99)',
-                'rgba(84, 166, 222)',
-                'rgba(84, 166, 222)'
-            ],
-            borderSkipped: false,
-        }]
+            data: [3277, 14277, 11509, 20304, 15741, 17082, 21037, 25072],
+            borderColor: ['rgba(255, 255, 255)'],
+            backgroundColor: ['rgba(236, 89, 146, 0.8)'],
+            fill: true,
+            tension: 0.2,
+            },
+            {
+                data: [15577, 11277, 22209, 21104, 15141, 9782, 8037, 2252],
+                backgroundColor: ['rgba(12, 191, 238, 0.7)'],
+                fill: true,
+                tension: 0.2,
+                legend: false,
+                interaction: {
+                    intersect: false
+                },
+                radius: 0,
+            }
+        ],
     },
     options: {
+        responsive: true,
         plugins: {
+            filler: {
+                propagate: false,
+            },
             legend: false,
+        },
+        pointBackgroundColor: '#515974',
+        radius: 10,
+        interaction: {
+            intersect: false,
         },
         scales: {
             x: {
                 grid: {
                     display: false,
                     borderWidth: 0
-                }
+                },
+                ticks: {
+                    display: false,
+                    borderWidth: 0
+                },
             },
             y: {
                 min: 0,
-                max: 1300,
+                max: 30000,
                 ticks: {
                     display: false,
                     borderWidth: 0
@@ -185,3 +204,4 @@ const myArea = new Chart(area, {
         }
     },
 });
+

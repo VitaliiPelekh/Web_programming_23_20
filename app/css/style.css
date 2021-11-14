@@ -180,7 +180,24 @@
 .styleGraph {
     display: block;
     width: 100%;
-    height: 700px;
+}
+
+.styleFooterGraphBlocks {
+    color: #515974;
+}
+
+.styleFooterGraphTxtDay {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.styleFooterGraphTxtDate {
+    font-size: large;
+}
+
+.footerGraphBlockTxt1 {
+    border-right: #e1e7f0 3px solid;
+    border-left: #e1e7f0 3px solid;
 }
 
 .profileBlock {
@@ -226,8 +243,7 @@
 }
 
 .sidebar [aria-expanded=true]:after, .sidebar [data-toggle=collapse]:not(.collapsed):after {
-    transform: rotate(
-            -135deg);
+    transform: rotate(-135deg);
     top: 1.65rem;
 }
 
