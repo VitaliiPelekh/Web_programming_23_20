@@ -205,3 +205,138 @@ const myArea = new Chart(area, {
     },
 });
 
+function show (param) {
+    const show_id_1 = document.getElementById("show_1").style;
+    const show_id_2 = document.getElementById("show_2").style;
+    const show_id_3 = document.getElementById("show_3").style;
+    const show_id_4 = document.getElementById("show_4").style;
+    const show_id_5 = document.getElementById("show_5").style;
+    const show_id_6_1 = document.getElementById("show_6_1").style;
+    const show_id_6_2 = document.getElementById("show_6_2").style;
+    const show_id_7_1 = document.getElementById("show_7_1").style;
+    const show_id_7_2 = document.getElementById("show_7_2").style;
+    const show_id_8 = document.getElementById("show_8").style;
+
+    if (param==="show_closed_1"){
+        show_id_1.visibility = "hidden";
+        show_id_1.height="0";
+        show_id_1.padding="0";
+    }
+
+    if (param==="show_opened_1"){
+        show_id_1.visibility = "visible";
+        show_id_1.height="911px";
+        show_id_1.width="1563px";
+        show_id_1.padding="25px";
+    }
+
+    if (param==="show_closed_2"){
+        show_id_2.visibility = "hidden";
+        show_id_2.height="0";
+        show_id_2.padding="0";
+    }
+
+    if (param==="show_opened_2"){
+        show_id_2.visibility = "visible";
+        show_id_2.height="auto";
+        show_id_2.width="auto";
+        show_id_2.padding="25px";
+    }
+
+    if (param==="show_closed_3"){
+        show_id_3.visibility = "hidden";
+        show_id_3.height="0";
+        show_id_3.padding="0";
+    }
+
+    if (param==="show_opened_3"){
+        show_id_3.visibility = "visible";
+        show_id_3.height="auto";
+        show_id_3.width="auto";
+        show_id_3.padding="25px";
+    }
+
+    if (param==="show_closed_4"){
+        show_id_4.visibility = "hidden";
+        show_id_4.height="0";
+        show_id_4.padding="0";
+    }
+
+    if (param==="show_opened_4"){
+        show_id_4.visibility = "visible";
+        show_id_4.height="auto";
+        show_id_4.width="auto";
+        show_id_4.padding="1.25rem";
+    }
+
+    if (param==="show_closed_5"){
+        show_id_5.visibility = "hidden";
+        show_id_5.height="0";
+        show_id_5.padding="0";
+    }
+
+    if (param==="show_opened_5"){
+        show_id_5.visibility = "visible";
+        show_id_5.height="auto";
+        show_id_5.width="auto";
+        show_id_5.padding="1.5rem";
+    }
+
+    if (param==="show_closed_6"){
+        show_id_6_1.visibility = "hidden";
+        show_id_6_1.height="0";
+        show_id_6_1.padding="0";
+        show_id_6_2.visibility = "hidden";
+        show_id_6_2.height="0";
+        show_id_6_2.padding="0";
+    }
+
+    if (param==="show_opened_6"){
+        show_id_6_1.visibility = "visible";
+        show_id_6_1.height="auto";
+        show_id_6_1.width="auto";
+        show_id_6_1.paddingLeft="1.5rem"
+        show_id_6_1.paddingRight="3rem";
+        show_id_6_2.visibility = "visible";
+        show_id_6_2.height="auto";
+        show_id_6_2.width="auto";
+        show_id_6_2.paddingLeft="1.25rem";
+        show_id_6_2.paddingRight="1.25rem";
+        show_id_6_2.paddingBottom="1rem";
+    }
+
+    if (param==="show_closed_7"){
+        show_id_7_1.visibility = "hidden";
+        show_id_7_1.height="0";
+        show_id_7_1.padding="0";
+        show_id_7_2.visibility = "hidden";
+        show_id_7_2.height="0";
+        show_id_7_2.padding="0";
+    }
+
+    if (param==="show_opened_7"){
+        show_id_7_1.visibility = "visible";
+        show_id_7_1.height="auto";
+        show_id_7_1.width="auto";
+        show_id_7_2.paddingLeft="1.5rem";
+        show_id_7_2.paddingRight="0.5rem";
+        show_id_7_2.visibility = "visible";
+        show_id_7_2.height="auto";
+        show_id_7_2.width="auto";
+        show_id_7_2.paddingLeft="1.25rem";
+        show_id_7_2.paddingRight="1.25rem";
+        show_id_7_2.paddingBottom="0.66rem";
+    }
+
+    if (param==="show_closed_8"){
+        show_id_8.visibility = "hidden";
+        show_id_8.height="0";
+        show_id_8.padding="0";
+    }
+
+    if (param==="show_opened_8"){
+        show_id_8.visibility = "visible";
+        show_id_8.height="auto";
+        show_id_8.width="auto";
+    }
+}
