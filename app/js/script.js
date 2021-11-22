@@ -207,20 +207,61 @@ const myArea = new Chart(area, {
 
 function show (param) {
     const show_id_1 = document.getElementById("show_1").style;
+    const btn_id_1_1 = document.getElementById("btn_11").style;
+    const btn_id_1_2 = document.getElementById("btn_12").style;
+    const cardHeader_id_1 = document.getElementById("cardHeader1").style;
+
     const show_id_2 = document.getElementById("show_2").style;
+    const btn_id_2_1 = document.getElementById("btn_21").style;
+    const btn_id_2_2 = document.getElementById("btn_22").style;
+    const cardHeader_id_2 = document.getElementById("cardHeader2").style;
+
     const show_id_3 = document.getElementById("show_3").style;
+    const btn_id_3_1 = document.getElementById("btn_31").style;
+    const btn_id_3_2 = document.getElementById("btn_32").style;
+    const cardHeader_id_3 = document.getElementById("cardHeader3").style;
+
     const show_id_4 = document.getElementById("show_4").style;
+    const btn_id_4_1 = document.getElementById("btn_41").style;
+    const btn_id_4_2 = document.getElementById("btn_42").style;
+    const cardHeader_id_4 = document.getElementById("cardHeader4").style;
+
     const show_id_5 = document.getElementById("show_5").style;
+    const btn_id_5_1 = document.getElementById("btn_51").style;
+    const btn_id_5_2 = document.getElementById("btn_52").style;
+    const cardHeader_id_5 = document.getElementById("cardHeader5").style;
+
     const show_id_6_1 = document.getElementById("show_6_1").style;
     const show_id_6_2 = document.getElementById("show_6_2").style;
+    const btn_id_6_1 = document.getElementById("btn_61").style;
+    const btn_id_6_2 = document.getElementById("btn_62").style;
+    const cardHeader_id_6 = document.getElementById("cardHeader6").style;
+
     const show_id_7_1 = document.getElementById("show_7_1").style;
     const show_id_7_2 = document.getElementById("show_7_2").style;
+    const btn_id_7_1 = document.getElementById("btn_71").style;
+    const btn_id_7_2 = document.getElementById("btn_72").style;
+    const cardHeader_id_7 = document.getElementById("cardHeader7").style;
+
     const show_id_8 = document.getElementById("show_8").style;
+    const btn_id_8_1 = document.getElementById("btn_81").style;
+    const btn_id_8_2 = document.getElementById("btn_82").style;
+    const cardHeader_id_8 = document.getElementById("cardHeader8").style;
 
     if (param==="show_closed_1"){
         show_id_1.visibility = "hidden";
         show_id_1.height="0";
         show_id_1.padding="0";
+
+        cardHeader_id_1.borderBottomLeftRadius="0.5rem";
+        cardHeader_id_1.borderBottomRightRadius="0.5rem";
+
+        btn_id_1_2.opacity="25%";
+        btn_id_1_1.opacity="100%";
+        btn_id_1_2.pointerEvents="none";
+        btn_id_1_1.pointerEvents="auto";
+        btn_id_1_2.userSelect="none";
+        btn_id_1_1.userSelect="auto";
     }
 
     if (param==="show_opened_1"){
@@ -228,12 +269,32 @@ function show (param) {
         show_id_1.height="911px";
         show_id_1.width="1563px";
         show_id_1.padding="25px";
+
+        cardHeader_id_1.borderBottomLeftRadius="0rem";
+        cardHeader_id_1.borderBottomRightRadius="0rem";
+
+        btn_id_1_2.opacity="100%";
+        btn_id_1_1.opacity="25%";
+        btn_id_1_2.pointerEvents="auto";
+        btn_id_1_1.pointerEvents="none";
+        btn_id_1_2.userSelect="auto";
+        btn_id_1_1.userSelect="none";
     }
 
     if (param==="show_closed_2"){
         show_id_2.visibility = "hidden";
         show_id_2.height="0";
         show_id_2.padding="0";
+
+        cardHeader_id_2.borderBottomLeftRadius="0.5rem";
+        cardHeader_id_2.borderBottomRightRadius="0.5rem";
+
+        btn_id_2_2.opacity="25%";
+        btn_id_2_1.opacity="100%";
+        btn_id_2_2.pointerEvents="none";
+        btn_id_2_1.pointerEvents="auto";
+        btn_id_2_2.userSelect="none";
+        btn_id_2_1.userSelect="auto";
     }
 
     if (param==="show_opened_2"){
@@ -241,12 +302,32 @@ function show (param) {
         show_id_2.height="auto";
         show_id_2.width="auto";
         show_id_2.padding="25px";
+
+        cardHeader_id_2.borderBottomLeftRadius="0rem";
+        cardHeader_id_2.borderBottomRightRadius="0rem";
+
+        btn_id_2_2.opacity="100%";
+        btn_id_2_1.opacity="25%";
+        btn_id_2_2.pointerEvents="auto";
+        btn_id_2_1.pointerEvents="none";
+        btn_id_2_2.userSelect="auto";
+        btn_id_2_1.userSelect="none";
     }
 
     if (param==="show_closed_3"){
         show_id_3.visibility = "hidden";
         show_id_3.height="0";
         show_id_3.padding="0";
+
+        cardHeader_id_3.borderBottomLeftRadius="0.5rem";
+        cardHeader_id_3.borderBottomRightRadius="0.5rem";
+
+        btn_id_3_2.opacity="25%";
+        btn_id_3_1.opacity="100%";
+        btn_id_3_2.pointerEvents="none";
+        btn_id_3_1.pointerEvents="auto";
+        btn_id_3_2.userSelect="none";
+        btn_id_3_1.userSelect="auto";
     }
 
     if (param==="show_opened_3"){
@@ -254,12 +335,32 @@ function show (param) {
         show_id_3.height="auto";
         show_id_3.width="auto";
         show_id_3.padding="25px";
+
+        cardHeader_id_3.borderBottomLeftRadius="0rem";
+        cardHeader_id_3.borderBottomRightRadius="0rem";
+
+        btn_id_3_2.opacity="100%";
+        btn_id_3_1.opacity="25%";
+        btn_id_3_2.pointerEvents="auto";
+        btn_id_3_1.pointerEvents="none";
+        btn_id_3_2.userSelect="auto";
+        btn_id_3_1.userSelect="none";
     }
 
     if (param==="show_closed_4"){
         show_id_4.visibility = "hidden";
         show_id_4.height="0";
         show_id_4.padding="0";
+
+        cardHeader_id_4.borderBottomLeftRadius="0.5rem";
+        cardHeader_id_4.borderBottomRightRadius="0.5rem";
+
+        btn_id_4_2.opacity="25%";
+        btn_id_4_1.opacity="100%";
+        btn_id_4_2.pointerEvents="none";
+        btn_id_4_1.pointerEvents="auto";
+        btn_id_4_2.userSelect="none";
+        btn_id_4_1.userSelect="auto";
     }
 
     if (param==="show_opened_4"){
@@ -267,12 +368,32 @@ function show (param) {
         show_id_4.height="auto";
         show_id_4.width="auto";
         show_id_4.padding="1.25rem";
+
+        cardHeader_id_4.borderBottomLeftRadius="0rem";
+        cardHeader_id_4.borderBottomRightRadius="0rem";
+
+        btn_id_4_2.opacity="100%";
+        btn_id_4_1.opacity="25%";
+        btn_id_4_2.pointerEvents="auto";
+        btn_id_4_1.pointerEvents="none";
+        btn_id_4_2.userSelect="auto";
+        btn_id_4_1.userSelect="none";
     }
 
     if (param==="show_closed_5"){
         show_id_5.visibility = "hidden";
         show_id_5.height="0";
         show_id_5.padding="0";
+
+        cardHeader_id_5.borderBottomLeftRadius="0.5rem";
+        cardHeader_id_5.borderBottomRightRadius="0.5rem";
+
+        btn_id_5_2.opacity="25%";
+        btn_id_5_1.opacity="100%";
+        btn_id_5_2.pointerEvents="none";
+        btn_id_5_1.pointerEvents="auto";
+        btn_id_5_2.userSelect="none";
+        btn_id_5_1.userSelect="auto";
     }
 
     if (param==="show_opened_5"){
@@ -280,6 +401,16 @@ function show (param) {
         show_id_5.height="auto";
         show_id_5.width="auto";
         show_id_5.padding="1.5rem";
+
+        cardHeader_id_5.borderBottomLeftRadius="0rem";
+        cardHeader_id_5.borderBottomRightRadius="0rem";
+
+        btn_id_5_2.opacity="100%";
+        btn_id_5_1.opacity="25%";
+        btn_id_5_2.pointerEvents="auto";
+        btn_id_5_1.pointerEvents="none";
+        btn_id_5_2.userSelect="auto";
+        btn_id_5_1.userSelect="none";
     }
 
     if (param==="show_closed_6"){
@@ -289,6 +420,16 @@ function show (param) {
         show_id_6_2.visibility = "hidden";
         show_id_6_2.height="0";
         show_id_6_2.padding="0";
+
+        cardHeader_id_6.borderBottomLeftRadius="0.5rem";
+        cardHeader_id_6.borderBottomRightRadius="0.5rem";
+
+        btn_id_6_2.opacity="25%";
+        btn_id_6_1.opacity="100%";
+        btn_id_6_2.pointerEvents="none";
+        btn_id_6_1.pointerEvents="auto";
+        btn_id_6_2.userSelect="none";
+        btn_id_6_1.userSelect="auto";
     }
 
     if (param==="show_opened_6"){
@@ -303,6 +444,16 @@ function show (param) {
         show_id_6_2.paddingLeft="1.25rem";
         show_id_6_2.paddingRight="1.25rem";
         show_id_6_2.paddingBottom="1rem";
+
+        cardHeader_id_6.borderBottomLeftRadius="0rem";
+        cardHeader_id_6.borderBottomRightRadius="0rem";
+
+        btn_id_6_2.opacity="100%";
+        btn_id_6_1.opacity="25%";
+        btn_id_6_2.pointerEvents="auto";
+        btn_id_6_1.pointerEvents="none";
+        btn_id_6_2.userSelect="auto";
+        btn_id_6_1.userSelect="none";
     }
 
     if (param==="show_closed_7"){
@@ -312,6 +463,16 @@ function show (param) {
         show_id_7_2.visibility = "hidden";
         show_id_7_2.height="0";
         show_id_7_2.padding="0";
+
+        cardHeader_id_7.borderBottomLeftRadius="0.5rem";
+        cardHeader_id_7.borderBottomRightRadius="0.5rem";
+
+        btn_id_7_2.opacity="25%";
+        btn_id_7_1.opacity="100%";
+        btn_id_7_2.pointerEvents="none";
+        btn_id_7_1.pointerEvents="auto";
+        btn_id_7_2.userSelect="none";
+        btn_id_7_1.userSelect="auto";
     }
 
     if (param==="show_opened_7"){
@@ -326,17 +487,47 @@ function show (param) {
         show_id_7_2.paddingLeft="1.25rem";
         show_id_7_2.paddingRight="1.25rem";
         show_id_7_2.paddingBottom="0.66rem";
+
+        cardHeader_id_7.borderBottomLeftRadius="0rem";
+        cardHeader_id_7.borderBottomRightRadius="0rem";
+
+        btn_id_7_2.opacity="100%";
+        btn_id_7_1.opacity="25%";
+        btn_id_7_2.pointerEvents="auto";
+        btn_id_7_1.pointerEvents="none";
+        btn_id_7_2.userSelect="auto";
+        btn_id_7_1.userSelect="none";
     }
 
     if (param==="show_closed_8"){
         show_id_8.visibility = "hidden";
         show_id_8.height="0";
         show_id_8.padding="0";
+
+        cardHeader_id_8.borderBottomLeftRadius="0.5rem";
+        cardHeader_id_8.borderBottomRightRadius="0.5rem";
+
+        btn_id_8_2.opacity="25%";
+        btn_id_8_1.opacity="100%";
+        btn_id_8_2.pointerEvents="none";
+        btn_id_8_1.pointerEvents="auto";
+        btn_id_8_2.userSelect="none";
+        btn_id_8_1.userSelect="auto";
     }
 
     if (param==="show_opened_8"){
         show_id_8.visibility = "visible";
         show_id_8.height="auto";
         show_id_8.width="auto";
+
+        cardHeader_id_8.borderBottomLeftRadius="0rem";
+        cardHeader_id_8.borderBottomRightRadius="0rem";
+
+        btn_id_8_2.opacity="100%";
+        btn_id_8_1.opacity="25%";
+        btn_id_8_2.pointerEvents="auto";
+        btn_id_8_1.pointerEvents="none";
+        btn_id_8_2.userSelect="auto";
+        btn_id_8_1.userSelect="none";
     }
 }
