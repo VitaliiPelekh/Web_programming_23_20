@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Main Page</title>
 
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/app.css">
     <!--<link rel="stylesheet" type="text/css" href="/app/css/style.css">-->
     <link rel="stylesheet" href="/app/sass/styles.css">
@@ -399,16 +399,14 @@
                                     <button type="button"
                                             class="btn btn-outline-secondary dropdown-toggle styleBtnGroup btnStyleRadiusGray paddingBtnGroup"
                                             data-bs-toggle="dropdown" aria-expanded="false">
-                                        February
+                                        Months
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        <li><a class="dropdown-item" id="btn-december">December</a></li>
+                                        <li><a class="dropdown-item" id="btn-january">January</a></li>
+                                        <li><a class="dropdown-item" id="btn-february">February</a></li>
+                                        <li><a class="dropdown-item" id="btn-march">March</a></li>
+                                        <li><a class="dropdown-item" id="btn-april">April</a></li>
                                     </ul>
                                 </div>
                                 <div class="btn-group">
@@ -973,9 +971,17 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function(){
+        $('.dropdown-toggle').dropdown()
+    });
+</script>
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/app.js"></script>
 <script src="/node_modules/chart.js/dist/chart.js"></script>
 <script src="/app/js/script.js"></script>
+
 </body>
 </html>

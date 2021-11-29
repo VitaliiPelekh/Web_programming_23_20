@@ -89,7 +89,7 @@ const pieChart3 = new Chart(pie3, {
     plugins: [plugin3],
 });
 
-
+/*
 const bar = document.getElementById('myBarChart');
 const myBar = new Chart(bar, {
     type: 'bar',
@@ -138,6 +138,97 @@ const myBar = new Chart(bar, {
             }
         }
     },
+});*/
+
+$(function () {
+    const bar = document.getElementById('myBarChart');
+    const json_url_dec = "/app/json/data_chart_dec.json";
+    const json_url_jan = "/app/json/data_chart_jan.json";
+    const json_url_feb = "/app/json/data_chart_feb.json";
+    const json_url_mar = "/app/json/data_chart_mar.json";
+    const json_url_apr = "/app/json/data_chart_apr.json";
+
+    var myBar = new Chart(bar, {
+        type: 'bar',
+        data: {
+            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18',
+                '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'],
+            datasets: [{
+                data: [725, 650, 700, 775, 885, 700, 675, 400, 450, 500, 550, 600, 650, 700, 750,
+                    800, 850, 900, 950, 925, 900, 750, 575, 400, 475, 550, 725, 762, 700, 675, 625],
+                backgroundColor: [
+                    'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)',
+                    'rgba(244, 91, 99)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)',
+                    'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)',
+                    'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)',
+                    'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)',
+                    'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)',
+                    'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(244, 91, 99)',
+                    'rgba(84, 166, 222)', 'rgba(84, 166, 222)', 'rgba(84, 166, 222)'
+                ],
+                borderRadius: 5,
+                borderSkipped: false,
+            }]
+        },
+        options: {
+            plugins: {
+                legend: false,
+            },
+            scales: {
+                x: {
+                    grid: {
+                        display: false,
+                        borderWidth: 0
+                    }
+                },
+                y: {
+                    min: 0,
+                    max: 1300,
+                    ticks: {
+                        display: false,
+                        borderWidth: 0
+                    },
+                    grid: {
+                        display: false,
+                        borderWidth: 0
+                    }
+                }
+            }
+        },
+    });
+
+    const btnDecember = document.getElementById("btn-december");
+    const btnJanuary = document.getElementById("btn-january");
+    const btnFebruary = document.getElementById("btn-february");
+    const btnMarch = document.getElementById("btn-march");
+    const btnApril = document.getElementById("btn-april");
+
+    btnDecember.onclick = function() {
+        ajax_chart(myBar, json_url_dec);
+    };
+    btnJanuary.onclick = function() {
+        ajax_chart(myBar, json_url_jan);
+    };
+    btnFebruary.onclick = function() {
+        ajax_chart(myBar, json_url_feb);
+    };
+    btnMarch.onclick = function() {
+        ajax_chart(myBar, json_url_mar);
+    };
+    btnApril.onclick = function() {
+        ajax_chart(myBar, json_url_apr);
+    };
+
+    // function to update our chart
+    function ajax_chart(chart, url) {
+        var data = data || {};
+        $.getJSON(url, data).done(function(response) {
+            chart.data.labels = response.labels;
+            chart.data.datasets[0].data = response.values;
+            chart.data.datasets[0].backgroundColor = response.backgroundColor;
+            chart.update(); // finally update our chart
+        });
+    }
 });
 
 const area = document.getElementById('myAreaChart');
@@ -252,6 +343,7 @@ function show (param) {
         show_id_1.visibility = "hidden";
         show_id_1.height="0";
         show_id_1.padding="0";
+
 
         cardHeader_id_1.borderBottomLeftRadius="0.5rem";
         cardHeader_id_1.borderBottomRightRadius="0.5rem";
