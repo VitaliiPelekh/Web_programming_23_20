@@ -219,14 +219,30 @@ $(function () {
         ajax_chart(myBar, json_url_apr);
     };
 
+    // the 5th lab
     // function to update our chart
-    function ajax_chart(chart, url) {
+    /*function ajax_chart(chart, url) {
         var data = data || {};
         $.getJSON(url, data).done(function(response) {
             chart.data.labels = response.labels;
             chart.data.datasets[0].data = response.values;
             chart.data.datasets[0].backgroundColor = response.backgroundColor;
             chart.update(); // finally update our chart
+        });
+    }*/
+
+    // the 5th & 6th labs
+    function ajax_chart(chart, url) {
+        $.ajax({
+            url: url,
+            method: 'GET',
+            dataType: 'json',
+            success: function (d) {
+                chart.data.labels = d.labels;
+                chart.data.datasets[0].data = d.values;
+                chart.data.datasets[0].backgroundColor = d.backgroundColor;
+                chart.update(); // finally update our chart
+            }
         });
     }
 });
