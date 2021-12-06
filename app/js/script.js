@@ -220,8 +220,7 @@ $(function () {
     };
 
     // the 5th lab
-    // function to update our chart
-    /*function ajax_chart(chart, url) {
+    /*function json_chart(chart, url) { // function to update our chart
         var data = data || {};
         $.getJSON(url, data).done(function(response) {
             chart.data.labels = response.labels;
@@ -232,7 +231,7 @@ $(function () {
     }*/
 
     // the 5th & 6th labs
-    function ajax_chart(chart, url) {
+    function ajax_chart(chart, url) { // function to update our chart
         $.ajax({
             url: url,
             method: 'GET',
